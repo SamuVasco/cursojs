@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+
+    <form action="">
+        <fieldset>
+            <legend>Dados para calcular</legend>
+            <p>
+                <label for="n1">Valor 1:</label>
+                <input type="text" id="n1" size="5">
+            </p>
+            <p>
+                <label for="n2">Valor 2:</label>
+                <input type="text" id="n2" size="5">
+            </p>
+            <hr>
+            <input type="button" value="+" onclick="somar()">
+            <input type="button" value="-" onclick="subtrair()">
+            <input type="button" value="*" onclick="multiplicar()">
+            <input type="button" value="/" onclick="dividir()">
+            <input type="button" value="Mod" onclick="mod()">
+            <input type="button" value="Exp" onclick="exp()">
+            <input type="button" value="RQ1" onclick="rq1()">
+            <input type="button" value="RQ2" onclick="rq2()">
+            <input type="button" value="C" onclick="limpar()">
+            <hr>
+            <p>
+                <label for="res">Resultado:</label>
+                <output id="res"></output>
+            </p>
+        </fieldset>
+    </form>
+    
+    
+</body>
+</html>
